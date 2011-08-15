@@ -11,7 +11,7 @@ describe PagesController do
     it 'should have the right title' do
       get 'home'
       response.should have_selector("title",
-                      :content => "Crowdshare | Home")
+                      :content => "Crowdshare | Online Sharing | Home")
     end
     it "should have a non blank body" do
       get "home"
@@ -27,7 +27,7 @@ describe PagesController do
     it 'should have the right title' do
       get 'contact'
       response.should have_selector("title",
-                      :content => "Crowdshare | Contact")
+                      :content => "Crowdshare | Online Sharing | Contact")
     end
   end
 
@@ -39,7 +39,7 @@ describe PagesController do
      it 'should have the right title' do
       get 'about'
       response.should have_selector("title",
-                      :content => "Crowdshare | About")
+                      :content => "Crowdshare | Online Sharing | About")
     end
   end
 
