@@ -18,6 +18,12 @@
     </requirement>
     <requirement>
       <requirement>
+        <dependency name="gravatar_image_tag" version="0.1.0" bound="EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
         <dependency name="jquery-rails" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
@@ -72,6 +78,7 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] webrat (v0.7.1, C:/Ruby192/lib/ruby/gems/1.9.1/gems/webrat-0.7.1)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] factory_girl (v1.3.3, C:/Ruby192/lib/ruby/gems/1.9.1/gems/factory_girl-1.3.3)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] factory_girl_rails (v1.0, C:/Ruby192/lib/ruby/gems/1.9.1/gems/factory_girl_rails-1.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] gravatar_image_tag (v0.1.0, C:/Ruby192/lib/ruby/gems/1.9.1/gems/gravatar_image_tag-0.1.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] mail (v2.3.0, C:/Ruby192/lib/ruby/gems/1.9.1/gems/mail-2.3.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] treetop (v1.4.10, C:/Ruby192/lib/ruby/gems/1.9.1/gems/treetop-1.4.10)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] hike (v1.2.0, C:/Ruby192/lib/ruby/gems/1.9.1/gems/hike-1.2.0)" level="application" />
