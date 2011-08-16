@@ -9,5 +9,14 @@ class UsersController < ApplicationController
   def new
     @title = "Sign up"
   end
+
+   def index
+    @user = User.all
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @cs_members }
+    end
+  end
 end
 
