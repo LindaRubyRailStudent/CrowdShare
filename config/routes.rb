@@ -1,7 +1,8 @@
 Crowdshare::Application.routes.draw do
 
+  resources :users
+  resources :cs_members
 
-  get "users/new"
 
   root :to => 'pages#home'
   match "/contact", :to => "pages#contact"

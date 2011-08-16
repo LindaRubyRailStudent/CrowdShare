@@ -1,0 +1,49 @@
+<%= form_for(@cs_member) do |f| %>
+  <% if @cs_member.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cs_member.errors.count, "error") %> prohibited this cs_member from being saved:</h2>
+
+      <ul>
+      <% @cs_member.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :address2 %><br />
+    <%= f.text_field :address2 %>
+  </div>
+  <div class="field">
+    <%= f.label :address3 %><br />
+    <%= f.text_field :address3 %>
+  </div>
+  <div class="field">
+    <%= f.label :county %><br />
+    <%= f.text_field :county %>
+  </div>
+  <div class="field">
+    <%= f.label :country %><br />
+    <%= f.text_field :country %>
+  </div>
+  <div class="field">
+    <%= f.label :mobile %><br />
+    <%= f.number_field :mobile %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
