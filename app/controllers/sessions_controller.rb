@@ -4,7 +4,8 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    @title = "Sign out"
+    sign_out
+    redirect_to root_path
   end
 
   def create

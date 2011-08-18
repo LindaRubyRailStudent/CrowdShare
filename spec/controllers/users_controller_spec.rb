@@ -101,6 +101,11 @@ describe UsersController do
         post :create, :user => @attr
         flash[:success].should =~ /Welcome to Crowdshare App/
       end
+
+      it "should sign user in" do
+        post :create, :user =>@attr
+        controller.should be_signed_in
+      end
     end
   end
 end
