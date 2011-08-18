@@ -4,6 +4,7 @@ gem 'rails', '3.1.0.rc5'
 gem 'sqlite3'
 gem 'jquery-rails'
 gem "gravatar_image_tag", "0.1.0"
+gem 'pg'
 
 group :development do
   gem 'rspec-rails', '2.6.1'
