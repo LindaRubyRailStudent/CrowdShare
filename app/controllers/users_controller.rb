@@ -7,6 +7,7 @@ class UsersController < ApplicationController
   end
 
   def new
+    @user = User.new
     @title = "Sign up"
   end
 
@@ -15,7 +16,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @cs_members }
+      format.xml { render xml: @cs_members }
     end
   end
 end
